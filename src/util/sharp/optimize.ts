@@ -47,15 +47,6 @@ async function optimize(
     }
   }
 
-  if (width && height) {
-    await sharpInstance.resize({
-      width: width,
-      height: height,
-      fit: "contain",
-    });
-    // console.log("Resize Done!");
-  }
-
   const metadata = await sharpInstance.metadata();
 
   if (
@@ -65,6 +56,14 @@ async function optimize(
     metadata.format != "png"
   ) {
     throw new AppError("Service Error", 400, "File format is not supported!");
+  }
+  
+  if (width && height) {
+    await sharpInstance.resize({
+      width: width,
+      height: height,
+      fit: "contain",
+    });
   }
 
   switch (format || metadata.format) {
