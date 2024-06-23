@@ -71,7 +71,7 @@ To run this project, you will need to have the following on your system:
 1. Clone the project
 
 ```bash
-  git clone https://github.com/amjadelmahdy/image-proccessing-api
+  git clone https://github.com/amjadelmahdy/image-processing-api.git
 ```
 
 2. Go to the project directory
