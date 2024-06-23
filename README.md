@@ -302,7 +302,7 @@ To run tests, use the following command:
 
 - **Uncaught Exceptions**: Handling process.on "uncaughtException" at the app level rather than middleware.
 
-### Future implementations
+#### Future implementations
 
 - Pending requests: Modify and resubmit requests from the backend.
 
