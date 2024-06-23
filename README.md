@@ -40,6 +40,7 @@ This project Intensivly Demonstrates:
 - [Local Environment & Setup](#local-environment--setup)
 - [Run Locally](#run-locally)
 - [Usage Examples](#usageexamples)
+- [API Referance](#api-reference)
 - [DB Connection](#db-connection)
 - [Running Tests](#running-tests)
 - [Running Scripts](#running-scripts)
@@ -189,8 +190,6 @@ Using DBeaver Community to query the DB
 | `blue`       | `number`  | Blue color tint                  |
 
 <br>
-
-#### Tip
 
 > [!TIP]
 >
