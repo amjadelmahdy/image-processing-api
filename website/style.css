@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  color: #393e46;
+}
+
+header p {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: max-content;
+  width: max-content;
+  max-height: 100vh;
+  max-width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+code {
+  color: white;
+  font-size: 11px;
+}
+
+label {
+  margin-top: 3px;
+  text-align: center;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  color: #393e46;
+  opacity: 0.5;
+  transition: ease-in-out 0.1s;
+}
+
+svg:hover {
+  opacity: 0.7;
+}
+
+option {
+  background-color: #393e46;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+input[type="checkbox"]:checked {
+  color: #393e46;
+}
+
+input[type="file"],
+select {
+  cursor: pointer;
+}
+
+#left {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 100%;
+  width: 66.66%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: #393e46;
+  height: 100%;
+  width: 33.33%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem 2rem;
+  border-left: 2px solid rgb(255, 255, 255, 0.3);
+  border-top-left-radius: 7px;
+  overflow: auto;
+}
+
+#upper {
+  position: relative;
+  height: 1000px;
+  width: 1000px;
+  max-width: 100%;
+  max-height: 66.66%;
+}
+
+#lower {
+  display: flex;
+  height: 1000px;
+  width: 1000px;
+  max-width: 100%;
+  max-height: 33.33%;
+}
+
+#request {
+  background-color: #393e46;
+  height: 100%;
+  width: 50%;
+  border-top: 2px solid rgb(255, 255, 255, 0.3);
+  border-left: 2px solid rgb(255, 255, 255, 0.3);
+  border-top-left-radius: 7px;
+}
+
+#response {
+  position: relative;
+  background-color: #393e46;
+  height: 100%;
+  width: 50%;
+  border-top: 2px solid rgb(255, 255, 255, 0.3);
+  border-left: 2px solid rgb(255, 255, 255, 0.3);
+  border-top-right-radius: 7px;
+}
+
+#img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 4rem;
+}
+
+#img-container img {
+  /* width: 100%; */
+  height: 100%;
+}
+
+#download {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  padding: 0.5rem;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.status {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+
+.form-control {
+  background-color: #393e46;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form-control:focus {
+  color: #fff;
+  background-color: #393e46;
+  /* box-shadow: 0 0 0 0.2rem rgba(238, 238, 238, 0.3); */
+  box-shadow: none;
+  border-color: #fff;
+}
+
+.custom-select,
+.custom-file-label {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.custom-select:focus,
+.custom-file-input:focus ~ .custom-file-label {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.btn {
+  background-color: rgba(238, 238, 238, 0.5);
+  transition:
+    0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(238, 238, 238, 0.25);
+}
+
+.custom-file-label::after {
+  background-color: rgba(238, 238, 238, 0.5);
+  height: calc(1.5em + 0.8rem);
+  transition:
+    0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.custom-file:hover .custom-file-label::after {
+  cursor: pointer;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.sub-title {
+  rotate: 90deg;
+}
+
+.loader {
+  width: 60px;
+}
+
+.loader-wheel {
+  animation: spin 1s infinite linear;
+  border: 2px solid rgba(30, 30, 30, 0.5);
+  border-left: 4px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+.loader-text {
+  color: #393e46;
+  font-family: arial, sans-serif;
+}
+
+.loader-text:after {
+  content: "Loading";
+  animation: load 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load {
+  0% {
+    content: "Loading";
+  }
+  33% {
+    content: "Loading.";
+  }
+  67% {
+    content: "Loading..";
+  }
+  100% {
+    content: "Loading...";
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.inpu-group {
+  position: relative;
+}
+
+.input {
+  border: solid 1.5px #1e1e1e;
+  border-radius: 7px;
+  background: none;
+  padding: 15px;
+  font-size: 18px;
+  color: #f5f5f5;
+}
