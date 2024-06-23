@@ -22,7 +22,7 @@ This project Intensivly Demonstrates:
 - **Availability**: It is open source and free to use with any project
 - **Common**: It is a relational, SQL database which is the most common type of database right now
 - **Popular and well-tested**: Postgres is a viral database and a common choice among enterprise software
-- **Transferable skills**: Because Postgres uses SQL, what you learn with Postgres is entirely transferable to working with a MySQL database or any other SQL database
+- **Transferable**: Because Postgres uses SQL, it is entirely transferable to working with a MySQL database or any other SQL database
 
 ### Typescript & ESLint
 
@@ -31,7 +31,7 @@ This project Intensivly Demonstrates:
 
 ### Winston
 
-- **Maintenance**: Log server errors with the request that caused the crash inside `logs/file-log-error.log`.
+- **Maintenance**: Log unexpected server errors.
 
 </details>
 
